@@ -5,6 +5,7 @@ GitHub profile link : https://github.com/RahulSahOfficial */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono&display=swap");
 
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -14,7 +15,8 @@ GitHub profile link : https://github.com/RahulSahOfficial */
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: Poppins;
+  font-family: 'Oswald', sans-serif;
+  /*font-family: Poppins;*/
   background-color: rgb(120, 183, 3);
 }
 
@@ -23,9 +25,13 @@ body {
   height: 30rem;
   padding: 7rem 5rem;
   background: linear-gradient(to bottom, #0000006e, #00000059),
-    url(./img/atardecer.jpg);
+    url(./img/stars.jpg);
   background-size: cover;
   background-position: center;
+}
+.logoexpandido {
+  width: 400px;
+  height: auto;
 }
 .heroarea h3 {
   font-size: 2rem;
@@ -35,7 +41,8 @@ body {
 .heroarea h1 {
   color: white;
   font-size: 5rem;
-  font-family: Poppins;
+  font-family: 'Oswald', sans-serif;
+  /*font-family: Poppins;*/
   letter-spacing: 4px;
   margin: 0.5rem 0 1rem;
 }
@@ -49,6 +56,20 @@ body {
   color: white;
   cursor: pointer;
 }
+@media (max-width: 485px) {
+.logoexpandido {
+  width: 280px;
+  height: auto;
+  opacity: 2;
+  }
+}
+@media (max-width: 370px) {
+  .logoexpandido {
+    width: 220px;
+    height: auto;
+    opacity: 2;
+    }
+  }
 
 /* Styling the nabigation bar */
 nav {
@@ -62,7 +83,7 @@ nav {
   left: 0;
 }
 .logo {
-  font-family: "Pacifico", cursive;
+  font-family: 'Oswald', sans-serif;
   text-decoration: none;
   color: white;
   font-size: 2rem;
@@ -78,7 +99,7 @@ nav .links a {
   margin: 0 0.5rem;
 }
 
-/*  logo mas  descrpcin  */  
+/*  logo mas  descripcion  */  
 
 /* Intro */
 .intro {
@@ -86,38 +107,19 @@ nav .links a {
   padding: 0 1em;
 }
 
-.intro__title {
-  margin: 0;
-  font-family: var(--familyRobotoSlab);
-  font-size: 2.4rem;
-  font-weight: normal;
-  line-height: 1.3;
-  color: var(--darkPurple);
-}
-
-.intro__subtitle {
+.intro__subtitle  {
   margin: 1.2rem 0;
-  font-size: 0.9rem;
-  color: var(--darkGrey);
+  font-size: 1.0rem;
+  /*color:rgb(101, 42, 42);*/
+  color: black;
+  font-style:italic;
+  font-weight: bold;
+  /*color: var(--darkGrey);*/
 }
-
-.button {
-  display: inline-block;
-  padding: 0.7em 1.2em;
-  font-size: 1rem;
-  background-color: var(--pink);
-  color: var(--white);
-  border-radius: 3px;
-}
-
-.button:hover {
-  background-color: #a5285c;
-}
-
 
 .intro__illustration {
   max-width: 100%;
-  margin: 2rem 4rem;
+  margin: 3rem 9rem;
 }
 
 @media (min-width: 32em) {
@@ -175,7 +177,7 @@ nav .links a {
 
 @media (max-width: 37em) {
   .intro__illustration {
-    margin: 1rem 3rem;
+    margin: 1rem 6rem;
     align-self: center;
     width: 45%;
     height: auto;
@@ -204,11 +206,11 @@ nav .links a {
   margin: 6rem;
 }
 .desc h2 {
-  font-family: Poppins;
+  font-family: 'Oswald', sans-serif;
   font-weight: 600;
   text-align: center;
   font-size: 2rem;
-  color: #2196f3;
+  color:rgb(101, 42, 42);
 }
 .desc h2 span {
   color: white;
