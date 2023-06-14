@@ -234,10 +234,10 @@ nav .links a {
   font-weight: 500;
 }
 .eachcard p {
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   font-family: 'Oswald', sans-serif;
   /*font-family: "Roboto Mono";*/
-  color: #e4e4e4;
+  color: white;
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -259,10 +259,11 @@ nav .links a {
 }
 .card2 {
   /*background: linear-gradient(45deg, #000000b0, #0000009e),*/
-  background: url(./img/atardecer.jpg);
+  background: linear-gradient(45deg, #423e3eb0, #423e3eb0), 
+  url(./img/atardecer.jpg);
 }
 .card3 {
-  background: 
+  background: linear-gradient(45deg, #423e3eb0, #423e3eb0),
     url(./img/jupiter.jpg);
 }
 .card4 {
