@@ -215,7 +215,7 @@ nav .links a {
 .desc h2 span {
   color: white;
   margin-left: 0.5rem;
-  font-family: "Roboto Mono";
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Styling each card */
@@ -235,7 +235,7 @@ nav .links a {
 }
 .eachcard p {
   font-size: 0.9rem;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Oswald', sans-serif;
   /*font-family: "Roboto Mono";*/
   color: #e4e4e4;
   line-height: 1.5;
