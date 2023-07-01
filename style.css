@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
   font-family: 'Oswald', sans-serif;
   /*font-family: Poppins;*/
-  background-color: rgb(120, 183, 3);
+  background-color: rgb(0, 145, 60);
 }
 
 /* Styling the hero area */
@@ -90,15 +90,17 @@ nav {
   letter-spacing: 3px;
 }
 nav .links {
-  font-size: 1rem;
-  font-family: Poppins;
+  font-size: 1.1rem;
+  font-family: 'Oswald', sans-serif;
 }
 nav .links a {
   color: white;
   text-decoration: none;
-  margin: 0 0.5rem;
+  margin: 0 1.1rem;
 }
-
+nav .links a:hover {
+opacity: .2;
+}
 /*  logo mas  descripcion  */  
 
 /* Intro */
@@ -111,7 +113,7 @@ nav .links a {
   margin: 1.2rem 0;
   font-size: 1.0rem;
   /*color:rgb(101, 42, 42);*/
-  color: black;
+  color: rgb(78, 31, 0);
   font-style:italic;
   font-weight: bold;
   /*color: var(--darkGrey);*/
@@ -210,10 +212,10 @@ nav .links a {
   font-weight: 600;
   text-align: center;
   font-size: 2rem;
-  color:rgb(101, 42, 42);
+  color:rgb(78, 31, 0);
 }
 .desc h2 span {
-  color: white;
+  color: rgb(236, 174, 36);
   margin-left: 0.5rem;
   font-family: 'Oswald', sans-serif;
 }
@@ -229,7 +231,7 @@ nav .links a {
 .eachcard h3 {
   font-family: Poppins;
   margin: 0 0 0.8rem;
-  color: #ffeb3b;
+  color: rgb(236, 174, 36);
   font-size: 2rem;
   font-weight: 500;
 }
@@ -306,11 +308,14 @@ footer .bottomline {
   color: white;
 }
 .flinks a {
-  margin: 0 0.4rem;
+  margin: 0 0.7rem;
   text-decoration: none;
-  font-family: Poppins;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.1rem;
   color: #d0d0d0;
+}
+.flinks a:hover {
+  opacity: 0.2;
 }
 a:link, a:visited,  a:hover, a:active {
   text-decoration: none;

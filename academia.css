@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@font-face {
+  font-family: "HeadingNowTrial-35Medium.ttf" ;
+  src: url(./fonts/HeadingNowTrial-35Medium.ttf);
+}
+
 body {
   display: flex;
   height: 30vh;
@@ -11,7 +16,7 @@ body {
 .reveal {
   position: relative;
   display: flex;
-  color: rgb(110, 225, 245);
+  color: rgb(150, 71, 149);
   font-size: 2em;
   font-family: 'Oswald', sans-serif; 
   /*font-family: Raleway, sans-serif;*/
@@ -31,7 +36,7 @@ body {
   bottom: 0;
   width: 2px;
   height: 100%;
-  background: white;
+  background: rgb(0, 145, 60);
   opacity: 0;
   transform: scale(0);
 }
@@ -93,13 +98,27 @@ nav {
 }
 
 nav .casita {
-  width: 12%;
+  width: 60%;
   height: auto;
 }
+
+nav .casita:hover {
+  opacity: .5;
+}
+
+@media (max-width: 600px) {
+  nav .casita {
+    width: 40%;
+    height: auto;
+    margin-right: 0px;
+    /*right: 1px; */
+}}
+
 
  /* Styling the Description Section */
 
 main {
+  
   display: grid;
   position: absolute;
   top: 350px;
@@ -120,13 +139,15 @@ h4 {
 .eachcard h3 {
   font-family: 'Oswald', sans-serif;
   margin: 0 0 0.8rem;
-  color: #ffeb3b;
+  color: rgb(236, 174, 36);
   font-size: 2rem;
   font-weight: 500;
 }
 .eachcard p {
   font-size: 1.1rem;
-  font-family: 'Oswald', sans-serif;  
+  
+  font-family: 'HeadingNowTrial-35Medium' ; 
+  /*font-family: 'Oswald', sans-serif;  */
   color: #e4e4e4;
   line-height: 1.5;
   font-weight: 400;
@@ -145,15 +166,15 @@ h4 {
 /* Adding different background to each cards */
 .card1 {
   background: linear-gradient(45deg, #000000b0, #0000009e),
-    url(./img/lilas.jpg);
+    url(./img/amapolas.jpg);
 }
 .card2 {
   background: linear-gradient(45deg, #000000b0, #0000009e),
-   url(./img/lilas.jpg);
+   url(./img/liriodeagua.jpg);
 }
 .card3 {
   background: linear-gradient(45deg, #000000b0, #0000009e),
-    url(./img/lilas.jpg);
+    url(./img/amapolas.jpg);
 }
 .card4 {
   background: linear-gradient(45deg, #000000b0, #0000009e),
