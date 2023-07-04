@@ -146,8 +146,8 @@ h4 {
 .eachcard p {
   font-size: 1.1rem;
   
-  font-family: 'HeadingNowTrial-35Medium' ; 
-  /*font-family: 'Oswald', sans-serif;  */
+  /*font-family: 'HeadingNowTrial-35Medium' ; */
+  font-family: 'Oswald', sans-serif;  
   color: #e4e4e4;
   line-height: 1.5;
   font-weight: 400;
@@ -174,7 +174,7 @@ h4 {
 }
 .card3 {
   background: linear-gradient(45deg, #000000b0, #0000009e),
-    url(./img/amapolas.jpg);
+    url(./img/jardin.jpg);
 }
 .card4 {
   background: linear-gradient(45deg, #000000b0, #0000009e),
@@ -197,6 +197,13 @@ h4 {
     font-size: 0.9rem;
   }
 }
+
+
+@media (max-width: 410px) {
+  .eachcard h3 {
+    font-size: 1.4rem; 
+  }
+} 
 
 
 

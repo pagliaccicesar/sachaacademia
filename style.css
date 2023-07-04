@@ -212,7 +212,7 @@ opacity: .2;
   font-weight: 600;
   text-align: center;
   font-size: 2rem;
-  color:rgb(78, 31, 0);
+  color:rgb(236, 174, 36);
 }
 .desc h2 span {
   color: rgb(236, 174, 36);
@@ -362,6 +362,9 @@ a:link, a:visited,  a:hover, a:active {
   footer .topline,
   footer .bottomline {
     flex-direction: column;
+  }
+  .bottomline p {
+    font-size: 0.8rem;
   }
   
   .topline a {
