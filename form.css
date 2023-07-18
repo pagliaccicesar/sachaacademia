@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    height:	100%;
+    size: 16 point;
+  }
+  
+.heading{
+    width: 100%;
+    background-color: rgb(150, 71, 149, .8);
+    /*background-color: #23b602;*/
+    margin-left: 0;
+    margin-right: 0;
+    min-height:	100%;
+    position:	relative;
+    padding-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+h3 {
+    color: rgb(78, 31, 0);
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 70px;
+    right: -15px;  
+    z-index: 10;
+}
+  
+nav .casita {
+    width: 60%;
+    height: auto;
+}
+  
+nav .casita:hover {
+    opacity: .5;
+}
+  
+@media (max-width: 600px) {
+    nav .casita {
+      width: 40%;
+      height: auto;
+      margin-right: 0px;
+      /*right: 1px; */
+}}
+  
+  
+.logo{
+    margin-top: 10px;
+}
+#container {
+    background-image: url(./img/blueplanet.jpg);
+    background-size: cover;
+    /*background-color:#e4f84d;*/
+    width: 98%;
+    margin: 15px auto;
+    border: 3px solid;
+    border-radius: .5%;
+}  
+main{          
+    align-content: center;
+    align-items: center;
+      /*height:	900px;*/
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    padding: 3px 25px;
+    color: rgb(236, 174, 36);
+}
+form {
+    margin: 5%;
+    width: 80%;
+}
+
+form p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: rgb(236, 174, 36);
+}
+form input {
+    font-family: 'Oswald', sans-serif;
+    font-size: small;
+}
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+    #container {
+        width: 100%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    h4 {
+        padding: 3px 20px;
+    }
+}

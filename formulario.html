@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/sachainicio.png" type="image/x-icon">
+    <title>Sacha Cursos</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+        <div class="borderheading">
+          <h3>FORMULARIO DE INSCRIPCION</h3>
+        </div>
+        <img src="./img/logoexpandidotrans.png" alt="image of logo" style="width:220px"/>        
+        <div class="bar">
+            <nav><a href="./sacha.html"><img class="casita" src="./img/casatrabajo.png" alt=""></a></nav>
+        </div>
+      </div>
+<div id="container">
+    <main>
+        <h4>Estimado, para inscribirse a los cursos presenciales que se ofrecen en Sacha Academia Ambiental Itinerante, le agradeceremos complete el formulario que nos permite conocer necesidades y características relevantes para la planificación.<br>
+            Lea atentamente cada una de las preguntas siguiendo las indicaciones.<br>            
+            Recuerde que en caso de inscribirse en más de un curso, deberá completar un formulario por cada curso en el que se inscriba.<br><br>           
+            (*) indica que la pregunta es obligatoria</h4>
+            
+        <div class="Requests">
+        <form action="form.php" method="post" name="contactform">
+            <p>Correo electrónico</p>
+            <p><input maxlength="80" name="email" placeholder="Ingresa tu correo electrónico" size="50" type="text" /></p>
+            <p>Solo podrá elegir una opción de curso. Si desea inscribirse en otro curso, deberá completar este procedimiento, enviar las respuestas, y luego repetir el procedimiento para el segundo curso.</p>
+            <p><input maxlength="80" name="curso" placeholder="Indicanos tu curso elegido" size="50" type="text" /></p>
+            <p>Nombre</p>
+            <p><input maxlength="50" name="first_name" placeholder="Tu nombre" size="50" type="text" /></p>
+            <p>Apellido</p>
+            <p><input maxlength="50" name="last_name" placeholder="Tu apellido" size="50" type="text" /></p>
+            <p>DNI (consignar con números y sin punto) (*)</p>
+            <p><input maxlength="80" name="documento" placeholder="Tu documento de identidad" size="50" type="text" /></p>
+            <p>Ciudad/Partido/Provincia donde reside (*)</p>
+            <p><input maxlength="50" name="ciudad" placeholder="Tu lugar de residencia" size="50" type="text" /></p>
+            <p>Teléfono de contacto (incluya el código de área y el 15 si es celular)</p>
+            <p><input maxlength="30" name="telephone" placeholder="Tu telefono de contacto" size="50" type="text" /></p>
+            <p>Máximo de instrucción</p>
+            <p><input maxlength="80" name="estudio" placeholder="Educación alcanzada" size="50" type="text" /></p>
+            <p>Alimentación (indique dieta especial/diabético/celíaco/otros) (*)</p>
+            <p><input maxlength="80" name="alimentacion" placeholder="Tu hábito alimenticio" size="50" type="text" /></p>
+            
+            <!--<p>Mensaje</p>
+            <p><textarea cols="37" maxlength="1000" name="comments" rows="6"></textarea></p>-->
+            <p><input type="submit" value="Submit" /></p>
+            <h4>Se enviará una copia de tus respuestas por correo electrónico a la dirección que has proporcionado.<br><br>
+                ¡Muchas gracias! Sacha.</h4>
+            
+        </form>
+        
+        </div>
+        
+    </main>
+</div>
+</body>
+</html>
