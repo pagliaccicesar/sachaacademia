@@ -83,7 +83,14 @@ form p {
 }
 form input {
     font-family: 'Oswald', sans-serif;
-    font-size: small;
+    
+}
+button {
+    background-color: rgb(150, 71, 149, .8);    
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.3);
 }
 
 @media all and (min-width: 0px) and (max-width: 320px) {
