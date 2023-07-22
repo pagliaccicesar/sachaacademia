@@ -3,12 +3,13 @@ if(isset($_POST['email'])) {
     $email_to = "pagliaccicesar@hotmail.com"; 
     $email_subject = "Inscripcion a Sacha Academia";   
  
-    function died($error) { 
-        echo "<h1>Whoops!</h1><h2>There appears to be something wrong with your completed form.</h2>"; 
-        echo "<strong><p>The following items are not specified correctly.</p></strong><br />"; 
+    function died($error) {
+        echo '<body style="background-color:orange">';
+        echo "<h1>SACHA Academia!</h1><h2>Existe un error en alguno de los datos ingresados.</h2>"; 
+        echo "<strong><p>Los siguientes datos están erroneamente cargados:</p></strong><br />"; 
         echo $error."<br /><br />"; 
-        echo "<p>Return to the form and try again.</p><br />";
-		echo "<p><a href='index.php'>return to the homepage</a></p>";
+        echo "<strong><p>Presione aquí debajo para vover al formulario.</p></strong><br />";
+		echo "<p><a href='https://sachaacademia.ar/formulario.html'>SACHA Formulario</a></p>";
         die(); 
     }
     $email_from = $_POST['email']; // required
@@ -70,7 +71,7 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
 
 <?php
-header("Location: https://www.pagliacci.ar/form.html"); // Redirecionamos a Baulphp
+header("Location: https://www.sachaacademia.ar/cursos.html"); // Redirecionamos a Baulphp
 exit(); //terminamos la ejecución del script php, ya que si redirecionamos ya no nos interesa seguir con el codigo PHP anterior.
  
 //<!-- include your own success html here --> 
