@@ -164,7 +164,14 @@ h4 {
 }
 
 button {
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Oswald', sans-serif;
+  background-color: #f44336;
+  border-radius: 10%;
+}
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+
 }
 
 /* Adding different background to each cards */
