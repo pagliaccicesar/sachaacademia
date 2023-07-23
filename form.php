@@ -48,7 +48,7 @@ if(isset($_POST['email'])) {
   if(strlen($error_message) > 0) { 
     died($error_message); 
   } 
-    $email_message = "Form details are given below.\n\n"; 
+    $email_message = "Estos son datos enviados desde formulario SACHA.\n\n"; 
 
     
     function clean_string($string) { 
