@@ -1,6 +1,6 @@
 <?php 
 if(isset($_POST['email'])) { 
-    $email_to = "pagliaccicesar@hotmail.com"; 
+    $email_to = "contacto@sachaacademia.ar"; 
     $email_subject = "Inscripcion a Sacha Academia";   
  
     function died($error) {
