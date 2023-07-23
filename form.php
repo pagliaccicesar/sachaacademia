@@ -4,12 +4,15 @@ if(isset($_POST['email'])) {
     $email_subject = "Inscripcion a Sacha Academia";   
  
     function died($error) {
-        echo '<body style="background-color:orange">';
-        echo "<h1>SACHA Academia!</h1><h2>Existe un error en alguno de los datos ingresados.</h2>"; 
-        echo "<strong><p>Los siguientes datos están erroneamente cargados:</p></strong><br />"; 
+        echo '<body style="background-color:sandybrown;text-align:center;font-family: Trebuchet MS, sans-serif";>';
+        echo '<img src="img/logoexpandidotrans.png" width="250" height="130" />';
+        //print "<img src=\"img/logosachaphp.png\">";//
+        echo "<h1>SACHA ACADEMIA ITINERANTE</h1><h2>Existe un error en alguno de los datos ingresados.</h2>"; 
+        echo "<h2>Los siguientes datos están erroneamente cargados:</h2><br />"; 
         echo $error."<br /><br />"; 
-        echo "<strong><p>Presione aquí debajo para vover al formulario.</p></strong><br />";
-		echo "<p><a href='https://sachaacademia.ar/formulario.html'>SACHA Formulario</a></p>";
+        echo "<h2>Presione aquí debajo para volver al formulario.</h2><br />";
+		echo "<button style=background-color:gold;border-radius:20%><p><a href='https://sachaacademia.ar/formulario.html'>VOLVER</a></p></button>";  
+    
         die(); 
     }
     $email_from = $_POST['email']; // required
@@ -26,16 +29,16 @@ if(isset($_POST['email'])) {
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
   if(!preg_match($email_exp,$email_from)) { 
-    $error_message .= '<li><p>La dirección de correo electrónico es incorrecta<p></li>'; 
+    $error_message .= '<li><h1>La dirección de correo electrónico es incorrecta<h1></li>'; 
   }
  
     $string_exp = "/^[A-Za-z .'-]+$/"; 
   if(!preg_match($string_exp,$first_name)) { 
-    $error_message .= '<li><p>First name appears to be wrong</p></li>'; 
+    $error_message .= '<li><h1>Ingrese correctamente su nombre</h1></li>'; 
   }
  
   if(!preg_match($string_exp,$last_name)) { 
-    $error_message .= '<li><p>Last name appears to be wrong</p></li>'; 
+    $error_message .= '<li><h1>Ingrese correctamente su apellido</h1></li>'; 
   }
  
   //if(strlen($comments) < 2) { 
