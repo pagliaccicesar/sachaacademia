@@ -31,7 +31,7 @@ nav {
 }
   
 nav .casita {
-    width: 60%;
+    width: 50%;
     height: auto;
 }
   
@@ -43,7 +43,7 @@ nav .casita:hover {
     nav .casita {
       width: 40%;
       height: auto;
-      margin-right: 0px;
+      margin-right: -15px;
       /*right: 1px; */
 }}
   
