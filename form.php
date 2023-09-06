@@ -40,6 +40,10 @@ if(isset($_POST['email'])) {
   if(!preg_match($string_exp,$last_name)) { 
     $error_message .= '<li><h1>Ingrese correctamente su apellido</h1></li>'; 
   }
+
+  if (empty($_REQUEST['cbox1'])) {   
+    $error_message .= '<li><h1>Debe estar de acuerdo con términos y condiciones</h1></li>'; 
+  }
  
   //if(strlen($comments) < 2) { 
     //$error_message .= '<li><p>Message appears to be incorrect</p></li>'; 
